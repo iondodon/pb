@@ -3,5 +3,5 @@ project(pb)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES premii1.cpp)
+set(SOURCE_FILES rmq.cpp)
 add_executable(pb ${SOURCE_FILES})

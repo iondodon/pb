@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pb.dir/premii1.cpp.obj"
+  "CMakeFiles/pb.dir/rmq.cpp.o"
   "pb.pdb"
-  "pb.exe"
-  "pb.exe.manifest"
-  "libpb.dll.a"
+  "pb"
 )
 
 # Per-language clean rules from dependency scanning.

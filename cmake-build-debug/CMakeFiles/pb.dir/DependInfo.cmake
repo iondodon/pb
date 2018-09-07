@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CLionProjects/pb/premii1.cpp" "D:/CLionProjects/pb/cmake-build-debug/CMakeFiles/pb.dir/premii1.cpp.obj"
+  "/home/ion/Documents/pb/rmq.cpp" "/home/ion/Documents/pb/cmake-build-debug/CMakeFiles/pb.dir/rmq.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
