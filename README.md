@@ -1,5 +1,9 @@
-* [Range minimum query](https://infoarena.ro/problema/rmq) - infoarena ...
+## infoarena.ro
+
+* ...rmq.cpp [Range minimum query](https://infoarena.ro/problema/rmq)
 
 ---
 
-* [premii1](http://campion.edu.ro/arhiva/index.php?page=problem&action=view&id=714) - campion
+## campion.edu.ro/arhiva
+
+* premii1.cpp [premii1](http://campion.edu.ro/arhiva/index.php?page=problem&action=view&id=714)
