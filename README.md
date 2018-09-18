@@ -1,1 +1,1 @@
-Solving competitive problems.
+* [Range minimum query](https://infoarena.ro/problema/rmq) - infoarena
