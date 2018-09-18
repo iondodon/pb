@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/pb.dir/rmq.cpp.o  -o pb 
