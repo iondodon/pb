@@ -1,4 +1,4 @@
-* [Range minimum query](https://infoarena.ro/problema/rmq) - infoarena ...
+* ...[Range minimum query](https://infoarena.ro/problema/rmq) - infoarena
 
 ---
 
