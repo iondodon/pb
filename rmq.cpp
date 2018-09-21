@@ -1,28 +1,23 @@
 #include <stdio.h>
 #include <tgmath.h>
+#define N_MAX 100000
 
-namespace common{
-    #define N_MAX 100000
-    int N, M, collums;
-};
+int N, M;
+
 
 class RMQSparseTable{
 private:
-    //log2(N_MAX) + 1 = 6
-    int sparse[N_MAX][6];
-    int input[N_MAX];
+    int sparse[N_MAX][17];
 
     void constructSparseTable(){
-        common::collums = (int)floor(log2((double)common::N)) + 1;
 
-        for(int i = 0; i < common::N; i++){
-            scanf("%d", &input[i]);
-            sparse[i][0] = i;
+        for(int i = 1; i <= N; i++){
+            scanf("%d", &sparse[i][0]);
         }
 
-        for(int j = 1; j <= common::collums; j++){
-            for(int i = 0; i + (1 << j) - 1 < common::N; i++){
-                if(input[sparse[i][j-1]] < input[sparse[i + (1 << (j - 1))][j - 1]]){
+        for(int j = 1; (1<<j) <= N; j++){
+            for(int i = 1; i + (1 << j) - 1 <= N; i++){
+                if(sparse[i][j-1] < sparse[i + (1 << (j - 1))][j - 1]){
                     sparse[i][j] = sparse[i][j-1];
                 } else {
                     sparse[i][j] = sparse[i + (1 << (j - 1))][j - 1];
@@ -39,10 +34,10 @@ public:
     int rmq(int left, int right){
         int l = right - left + 1;
         int k = (int)floor(log2(l));
-        if (input[sparse[left][k]] <= input[sparse[left + l - (1 << k)][k]]) {
-            return input[sparse[left][k]];
+        if (sparse[left][k] <= sparse[left + l - (1 << k)][k]) {
+            return sparse[left][k];
         } else {
-            return input[sparse[left - (1 << k) + 1][k]];
+            return sparse[left + l - (1 << k)][k];
         }
     }
 };
@@ -55,11 +50,11 @@ public:
     Master(){
         freopen("rmq.in", "r", stdin);
         freopen("rmq.out", "w", stdout);
-        scanf("%d%d", &(common::N), &(common::M));
+        scanf("%d%d", &N, &M);
         rmqSparseTable = new RMQSparseTable;
-        for (int i = 0, left, right; i < common::M; ++i) {
+        for (int i = 1, left, right; i <= M; i++) {
             scanf("%d%d", &left, &right);
-            printf("%d\n", rmqSparseTable->rmq(left-1, right-1));
+            printf("%d\n", rmqSparseTable->rmq(left, right));
         }
     }
 
@@ -73,4 +68,3 @@ int main(){
     delete master;
     return 0;
 }
-
