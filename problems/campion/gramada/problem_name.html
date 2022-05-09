@@ -1,0 +1,127 @@
+		<table width="735" cellpadding="0" cellspacing="0"><tbody><tr><td align="right" valign="middle"><form style="margin:0px; padding:0px;" action="index.php" method="get"><input name="submit" value="submit" onmouseover="this.src='style/trimitesolutieover.jpg'" onmouseout="this.src='style/trimitesolutie.jpg'" type="image" src="style/trimitesolutie.jpg" border="0"><input type="hidden" name="page" value="problem"><input type="hidden" name="action" value="submit"><input type="hidden" name="id" value="722"><input type="hidden" name="contest_id" value="0">
+        </form><br><a href="index.php?page=problem&amp;id=722&amp;milestone=1"><strong>problemă favorită</strong>&nbsp;<img id="favo" src="style/star0.bmp" border="0" alt="favorit"></a><br><br></td></tr></tbody></table>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.campion</title>
+<link rel="stylesheet" type="text/css" href="auxiliare/template.css">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" class="fundalee">
+<tbody><tr>   
+    <td class="titlu">gramada</td>
+    <td class="fundalcampion" align="right"><br><br><br>
+   <table>
+        <tbody><tr> 
+          <td width="205"><div align="left" class="albastru">Timp maxim de executie/test:</div></td>
+          <td width="88"><div align="right" class="bold"> <span class="albastru">0.1 
+              secunde</span></div></td>
+        </tr><tr> 
+          <td><div align="left" class="albastru">Memorie totala disponibila/stiva:</div></td>
+          <td><div align="right" class="albastru">16 
+              MB/1 MB</div></td>
+      </tr></tbody></table>  
+      <br>
+          </td>
+  </tr>
+</tbody></table>
+<p class="continut">Exista multe jocuri cu gramezi de pietre, chibrituri sau alte obiecte
+mici pe care le vom numi piese, din care unul sau mai multi jucatori iau piese dupa anumite
+reguli, operatie pe care o vom numi mutare. Unul dintre cele mai
+simple jocuri intre doua persoane foloseste o singura gramada, din care
+jucatorii iau alternativ piese dupa urmatoarele reguli :&nbsp;<br>
+- cel care incepe jocul poate lua oricate piese, dar nu toate<br>
+- jucatorul care urmeaza la mutare trebuie sa ia cel putin o piesa<br>
+- daca un jucator a luat <span class="courier">k</span> piese, cel care urmeaza poate lua cel mult <span class="courier">2k</span> piese<br>
+- cel care ia toate piesele ramase in gramada castiga jocul.<br>
+Calculatorul va invita la un astfel de joc; el fiind un foarte
+bun jucator va ofera sansa de a face prima mutare.</p>
+
+<p class="subtitlu">Cerinta</p>
+<p class="continut">Cunoscand numarul <span class="courier">N</span> de piese din gramada, determinati numarul de
+piese pe care trebuie sa-l luati prima data pentru a fi siguri de castig, indiferent de
+jocul calculatorului.</p>
+
+<p class="subtitlu">Date de intrare</p>
+<p class="continut">In fisierul de intrare <span class="courier">gramada.in</span> 
+este scris numarul intreg <span class="courier">N</span>.</p>
+
+<p class="subtitlu">Date de iesire</p>
+<p class="continut">In fisierul <span class="courier">gramada.out</span> 
+veti scrie numarul 0 daca oricum ati incepe jocul (oricate piese ati lua la prima
+mutare) calculatorul va castiga. In caz ca aveti o strategie de castig, veti scrie
+un numar natural nenul care sa reprezinte&nbsp; numarul pieselor pe care il
+luati prima data, astfel ca la orice raspuns al calculatorului sa puteti
+castiga. Daca exista mai multe mutari castigatoare veti scrie mutarea in care
+luati numarul maxim de piese.</p>
+
+<p class="subtitlu">Restrictii</p>
+<ul>
+  <li><span class="courier">1 &lt; N &lt;= 1000000000</span></li>
+</ul>
+
+<p class="subtitlu">Exemple</p>
+<table border="1" width="100%">
+  <tbody><tr class="antet_">
+    <td valign="top" class="tabel_"><span class="courier">gramada.in</span></td>
+    <td valign="top" class="tabel_"><span class="courier">gramada.out</span></td>
+    <td valign="top" class="tabel_"><span class="continut">Explicatie</span></td>
+  </tr>
+  <tr>
+
+  <td valign="top" class="tabel_"><span class="courier">10</span></td>
+  <td valign="top" class="tabel_"><span class="courier">2</span></td>
+<td valign="top" class="tabel_">
+<p class="continut">Daca luati 4 sau mai multe piese, calculatorul ia tot<br>
+Daca luati 3 piese, calculatorul ia doua, apoi castiga<br>
+Daca luati o piesa, calculatorul ia tot una si castiga<br>
+Numai daca luati doua piese calculatorul nu are nici o mutare castigatoare</p></td>
+  </tr>
+</tbody></table>
+<p></p>
+<table border="1" cellspacing="1" cellpadding="1" width="100%">
+<tbody><tr class="antet_"><td valign="TOP" class="tabel_">
+<span class="courier">gramada.in</span></td>
+<td valign="TOP" class="tabel_">
+<span class="courier">gramada.out</span></td>
+<td valign="TOP" class="tabel_">
+<span class="continut">Explicatie</span></td>
+</tr>
+<tr><td valign="TOP" class="tabel_">
+<span class="courier">5</span></td>
+<td valign="TOP" class="tabel_">
+<span class="courier">0</span></td>
+<td valign="TOP" class="tabel_">
+<p class="continut">Daca luati o piesa, calculatorul ia tot una<br>
+Daca luati mai mult de una, calculatorul le ia pe toate</p></td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+<table border="1" width="50%">
+  <tbody><tr class="antet_">
+    <td class="tabel_"><span class="courier">gramada.in</span></td>
+    <td class="tabel_"><span class="courier">gramada.out</span></td>
+  </tr>
+  <tr>
+    
+<td class="tabel_"><span class="courier">1000</span></td>
+<td class="tabel_"><span class="courier">13</span></td>
+ </tr>
+</tbody></table>
+<p align="RIGHT">prof. <i>Nistor Mot</i><br>
+Colegiul National "N.Balcescu" - Braila </p>
+
+
+<div class="continut" align="right" style="margin-right:13px;">propunător: <strong>Prof. Emanuela Cerchez</strong><br><a name="emanuela.cerchez@gmail.com" href="mailto:emanuela.cerchez@gmail.com">emanuela.cerchez@gmail.com</a></div><div class="subtitlu">Articole recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                
+                <tbody><tr><td width="200px" valign="top"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=17">autor</a>: </strong></td><td valign="top"><a href="index.php?page=paper&amp;action=view&amp;id=27">Permutări</a>, <a href="index.php?page=paper&amp;action=view&amp;id=28">Divizibilitate</a>, <a href="index.php?page=paper&amp;action=view&amp;id=29">Configuraţii stabile</a></td></tr></tbody></table></div><div class="subtitlu">Probleme recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                    <tbody><tr><td valign="top" width="200px"><strong>De la <a href="index.php?page=location&amp;id=32">Şansa de a deveni campion 2002</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=655">adevar</a>, <a href="index.php?page=problem&amp;action=view&amp;id=656">marcare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=658">joc10</a>, <a href="index.php?page=problem&amp;action=view&amp;id=659">prieteni1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=660">bare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=661">soricel1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=662">traseu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=663">zapezi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=664">banda10</a>, <a href="index.php?page=problem&amp;action=view&amp;id=665">soricel2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=667">masina2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=670">excursie1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=671">asmax</a>, <a href="index.php?page=problem&amp;action=view&amp;id=672">salvare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=673">perechi1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=674">culmi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=675">tramvai1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=676">numar2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=678">sume1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=680">raft</a>, <a href="index.php?page=problem&amp;action=view&amp;id=685">bloc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=686">schi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=687">joc12</a>, <a href="index.php?page=problem&amp;action=view&amp;id=688">sediu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=689">soricel3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=690">ferma</a>, <a href="index.php?page=problem&amp;action=view&amp;id=691">fni</a>, <a href="index.php?page=problem&amp;action=view&amp;id=692">sah1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=693">suma3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=694">granita</a>, <a href="index.php?page=problem&amp;action=view&amp;id=695">nr4</a>, <a href="index.php?page=problem&amp;action=view&amp;id=696">fractie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=697">blockout</a>, <a href="index.php?page=problem&amp;action=view&amp;id=698">join</a>, <a href="index.php?page=problem&amp;action=view&amp;id=699">cod3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=700">tunel</a>, <a href="index.php?page=problem&amp;action=view&amp;id=701">lover</a>, <a href="index.php?page=problem&amp;action=view&amp;id=702">trip</a>, <a href="index.php?page=problem&amp;action=view&amp;id=703">pepsi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=705">string</a>, <a href="index.php?page=problem&amp;action=view&amp;id=706">medii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=707">transport</a>, <a href="index.php?page=problem&amp;action=view&amp;id=708">tren3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=709">avion</a>, <a href="index.php?page=problem&amp;action=view&amp;id=710">prime1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=712">poligon1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=713">monkey</a>, <a href="index.php?page=problem&amp;action=view&amp;id=714">premii1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=715">garaj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=721">carti2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=723">microvirus</a>, <a href="index.php?page=problem&amp;action=view&amp;id=724">tv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=725">gramezi1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=726">puncte2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=728">benzina</a>, <a href="index.php?page=problem&amp;action=view&amp;id=729">aranjari</a>, <a href="index.php?page=problem&amp;action=view&amp;id=730">numere5</a>, <a href="index.php?page=problem&amp;action=view&amp;id=731">fat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=732">izo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=733">cafea</a>, <a href="index.php?page=problem&amp;action=view&amp;id=734">top</a>, <a href="index.php?page=problem&amp;action=view&amp;id=736">echipe1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=738">zoo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=740">secvente</a></td></tr><tr><td valign="top" width="200px"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=17">autor</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=99">cursa</a>, <a href="index.php?page=problem&amp;action=view&amp;id=135">insule</a>, <a href="index.php?page=problem&amp;action=view&amp;id=241">termen</a>, <a href="index.php?page=problem&amp;action=view&amp;id=255">div</a>, <a href="index.php?page=problem&amp;action=view&amp;id=347">mese</a>, <a href="index.php?page=problem&amp;action=view&amp;id=358">hperm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=375">zmeu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=391">chimie2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=408">mere2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=442">vile</a>, <a href="index.php?page=problem&amp;action=view&amp;id=446">dans</a>, <a href="index.php?page=problem&amp;action=view&amp;id=496">multiplu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=504">paralel</a>, <a href="index.php?page=problem&amp;action=view&amp;id=508">divizor</a>, <a href="index.php?page=problem&amp;action=view&amp;id=525">ghici</a>, <a href="index.php?page=problem&amp;action=view&amp;id=539">barca1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=583">fibo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=585">parc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=586">circular</a>, <a href="index.php?page=problem&amp;action=view&amp;id=605">sant</a>, <a href="index.php?page=problem&amp;action=view&amp;id=606">mobile</a>, <a href="index.php?page=problem&amp;action=view&amp;id=607">pattern</a>, <a href="index.php?page=problem&amp;action=view&amp;id=610">mutare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=613">concurs2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=661">soricel1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=665">soricel2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=684">vizibil</a>, <a href="index.php?page=problem&amp;action=view&amp;id=685">bloc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=689">soricel3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=692">sah1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=725">gramezi1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=729">aranjari</a>, <a href="index.php?page=problem&amp;action=view&amp;id=730">numere5</a>, <a href="index.php?page=problem&amp;action=view&amp;id=757">cifru1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=793">lacusta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=889">sir6</a>, <a href="index.php?page=problem&amp;action=view&amp;id=925">puncte3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=935">peri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1169">atelier</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1172">radical</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1232">pion</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1249">el</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1268">tort1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1414">triunghi4</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1443">bile6</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1517">zmax</a></td></tr><tr><td width="200px" valign="top"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=36">Fibonacci</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=74">fib</a>, <a href="index.php?page=problem&amp;action=view&amp;id=161">grupe</a>, <a href="index.php?page=problem&amp;action=view&amp;id=492">descfib</a>, <a href="index.php?page=problem&amp;action=view&amp;id=553">euclid</a>, <a href="index.php?page=problem&amp;action=view&amp;id=583">fibo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=901">vanatoare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=916">sirul</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1141">fibo1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1181">taler</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1187">aliniere</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1208">subm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1533">flori2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1697">prime2</a></td></tr>                    
+                </tbody></table>
+
+                </div>

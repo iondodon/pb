@@ -1,0 +1,142 @@
+		<table width="735" cellpadding="0" cellspacing="0"><tbody><tr><td align="right" valign="middle"><form style="margin:0px; padding:0px;" action="index.php" method="get"><input name="submit" value="submit" onmouseover="this.src='style/trimitesolutieover.jpg'" onmouseout="this.src='style/trimitesolutie.jpg'" type="image" src="style/trimitesolutie.jpg" border="0"><input type="hidden" name="page" value="problem"><input type="hidden" name="action" value="submit"><input type="hidden" name="id" value="1220"><input type="hidden" name="contest_id" value="0">
+        </form><br><a href="index.php?page=problem&amp;id=1220&amp;milestone=1"><strong>problemă favorită</strong>&nbsp;<img id="favo" src="style/star0.bmp" border="0" alt="favorit"></a><br><br></td></tr></tbody></table>﻿
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.campion</title>
+<link rel="stylesheet" type="text/css" href="auxiliare/template.css">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" class="fundalee">
+<tbody><tr>   
+    <td><span class="titlu">fillmat</span></td>
+    <td class="fundalcampion" align="right"><br><br><br>
+   <table>
+        <tbody><tr class="continut"> 
+          <td> 
+            <div align="left"><span class="albastru">Timp maxim de execuţie/test:</span></div></td>
+          <td> 
+            <div align="right"><span class="bold"> <span class="albastru">1 
+              secunde</span></span></div></td>
+        </tr><tr class="continut"> 
+          <td> 
+            <div align="left"><span class="albastru">Memorie totală disponibilă/stivă:</span></div></td>
+          <td> 
+            <div align="right"><span class="bold"><span class="albastru">64MB/8 MB</span></span></div></td>
+      </tr></tbody></table>
+       
+      <br>
+      
+    </td>
+  </tr>
+ </tbody></table>
+ 
+ <table width="100%" border="0" cellspacing="0" cellpadding="10">
+ <tbody><tr>
+ <td><div align="justify"> 
+        <p class="continut">Considerăm o matrice pătratică având N linii şi  N coloane care memorează numai valori 0 şi 1. Matricea suferă transformări în  mai mulţi paşi. La fiecare pas, toate componentele din matrice marcate cu 0 se  vor transforma în 1 dacă au cel puţin 3 vecini (pe linie, coloană şi diagonale)  marcate cu 1. Procesul de transformare se repetă la fiecare pas, până când  matricea are peste tot valoarea 1 sau până când nu mai poate surveni nicio  transformare. Mai jos este prezentată o matrice şi modul în care se efectuează  transformările în 7 paşi. </p>
+        <table border="1" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td width="81" valign="top"><p align="center">00000<br>
+              01000<br>
+              10100<br>
+              01000<br>
+              00000</p></td>
+            <td width="81" valign="top"><p align="center">00000<br>
+              01000<br>
+              11100<br>
+              01000<br>
+              00000</p></td>
+            <td width="81" valign="top"><p align="center">00000<br>
+              11100<br>
+              11100<br>
+              11100<br>
+              00000</p></td>
+            <td width="81" valign="top"><p align="center">01000<br>
+              11100<br>
+              11110<br>
+              11100<br>
+              01000</p></td>
+            <td width="81" valign="top"><p align="center">11100<br>
+              11110<br>
+              11110<br>
+              11110<br>
+              11100</p></td>
+            <td width="81" valign="top"><p align="center">11110<br>
+              11110<br>
+              11111<br>
+              11110<br>
+              11110</p></td>
+            <td width="81" valign="top"><p align="center">11110<br>
+              11111<br>
+              11111<br>
+              11111<br>
+              11110</p></td>
+            <td width="81" valign="top"><p align="center">11111<br>
+              11111<br>
+              11111<br>
+              11111<br>
+              11111</p></td>
+          </tr>
+          <tr>
+            <td width="81" valign="top"><p align="center">Iniţial</p></td>
+            <td width="81" valign="top"><p align="center">Pas 1</p></td>
+            <td width="81" valign="top"><p align="center">Pas 2</p></td>
+            <td width="81" valign="top"><p align="center">Pas 3</p></td>
+            <td width="81" valign="top"><p align="center">Pas 4</p></td>
+            <td width="81" valign="top"><p align="center">Pas 5</p></td>
+            <td width="81" valign="top"><p align="center">Pas 6</p></td>
+            <td width="81" valign="top"><p align="center">Pas 7</p></td>
+          </tr>
+        </tbody></table>
+        <p align="justify" class="subtitlu">Cerinţă</p>
+        <span class="continut">Să se determine numărul de paşi necesari ca  matricea să aibă peste tot valoarea 1, sau până când nu mai are loc nicio  transformare.</span> 
+        <p class="subtitlu">Date de intrare</p>
+        <p class="continut">Fişierul de intrare <span class="courier">fillmat.in</span> conţine pe prima linie un număr natural N  reprezentând dimensiunea matricei. Pe următoarele N linii se găsesc exact N  caractere 0 şi 1 reprezentând câte o linie din matrice. Elementele de pe linii <strong>nu</strong> sunt separate prin spaţii. </p>
+        <p class="subtitlu">Date de ieşire</p> 
+        <span class="continut">Fişierul de ieşire </span><span class="courier">fillmat.out</span> va conţine un singur număr natural reprezentând numărul  de paşi necesari pentru ca matricea să conţină peste tot valoarea 1, sau până  când nu mai are loc nicio transformare.
+        <p class="subtitlu">Restricţii</p>
+        <ul type="square">
+          <li class="continut"><span class="courier">3 &lt;= N &lt;= 300</span></li>
+          <li class="continut">Zonele vecine poziţiei <span class="courier">(i, j)</span> sunt: <span class="courier">(i-1,j-1)</span>,  <span class="courier">(i-1,j)</span>, <span class="courier">(i-1,j+1)</span>, <span class="courier">(i,j+1)</span>, <span class="courier">(i,j-1)</span>, <span class="courier">(i+1,j-1)</span>, <span class="courier">(i+1,j)</span>, <span class="courier">(i+1,j+1)</span>.</li>
+        </ul>
+        <p class="subtitlu">Exemplu</p>
+        <table cellpadding="2" cellspacing="2" border="0" width="39%" class="table_">
+          <tbody><tr> 
+            <td width="46%" class="antet_" valign="top"><strong><span class="courier">fillmat.in</span></strong></td>
+            <td width="54%" class="antet_"><strong><span class="courier">fillmat.out</span></strong></td>
+          </tr>
+          <tr> 
+            <td valign="top" class="tabel_"><span class="courier">5<br>
+              00000<br>
+              01000<br>
+              10100<br>
+              01000<br>
+              00000<br></span>
+            </td>
+            <td valign="top" class="tabel_"><span class="courier">7</span></td>
+          </tr>
+        </tbody></table>
+        <table cellpadding="2" cellspacing="0" border="0" align="right">
+          <tbody><tr> 
+            <td align="right" class="continut">prof. Dan Pracsiu</td>
+          </tr>
+          <tr> 
+            <td align="right" class="continut">Grupul Şcolar "Ştefan Procopiu" Vaslui </td>
+          </tr>
+          <tr> 
+            <td align="right"><a href="mailto:dpracsiu@yahoo.com" class="continut">dpracsiu@yahoo.com</a></td>
+          </tr>
+        </tbody></table>
+    </div></td></tr>
+</tbody></table>
+
+
+<div class="continut" align="right" style="margin-right:13px;">propunător: <strong>Prof. Emanuela Cerchez</strong><br><a name="emanuela.cerchez@gmail.com" href="mailto:emanuela.cerchez@gmail.com">emanuela.cerchez@gmail.com</a></div><div class="subtitlu">Probleme recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                    <tbody><tr><td valign="top" width="200px"><strong>De la <a href="index.php?page=location&amp;id=83">XOR 2011</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=1217">triunghi3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1218">cmmdcsecv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1219">drumuri1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1221">secvb</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1222">siruri3</a></td></tr><tr><td valign="top" width="200px"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=3">autor</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=39">cai</a>, <a href="index.php?page=problem&amp;action=view&amp;id=57">rebus</a>, <a href="index.php?page=problem&amp;action=view&amp;id=89">harta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=102">comun</a>, <a href="index.php?page=problem&amp;action=view&amp;id=237">axa</a>, <a href="index.php?page=problem&amp;action=view&amp;id=250">sir</a>, <a href="index.php?page=problem&amp;action=view&amp;id=263">ocean14</a>, <a href="index.php?page=problem&amp;action=view&amp;id=334">reduceri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=488">div3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=932">patrate6</a>, <a href="index.php?page=problem&amp;action=view&amp;id=970">vot</a>, <a href="index.php?page=problem&amp;action=view&amp;id=972">reziduu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=975">accesibil</a>, <a href="index.php?page=problem&amp;action=view&amp;id=981">predecesor</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1022">permutari</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1055">scanduri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1064">ordonare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1065">xor1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1066">paltrei</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1067">triunghi1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1068">123</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1069">traseu1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1096">parbit</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1106">petrecere</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1127">secvbiti</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1208">subm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1217">triunghi3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1218">cmmdcsecv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1219">drumuri1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1221">secvb</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1222">siruri3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1264">acces</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1266">segmente</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1305">echilibru1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1309">broscute</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1364">ksecv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1371">paisprezece</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1388">proddiv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1389">perechi2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1391">expeval</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1392">maxtri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1393">combcuv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1394">dfs</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1409">qtri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1422">blis</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1431">maxbin</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1433">probleme</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1467">divider</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1468">eliminare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1469">minm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1470">genab</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1471">grafxy</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1472">matd3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1473">azeval</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1474">matrixdel</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1475">speed</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1511">maxp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1528">split</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1554">binremove</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1555">sminus</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1556">subsets</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1579">tcif</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1620">sprime</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1621">sir2dif</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1624">ecp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1625">arbsum</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1626">robotzi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1627">permtr</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1628">unudoi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1655">matcnt</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1656">ssdj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1657">dominant</a></td></tr><tr><td width="200px" valign="top"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=24">fill</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=57">rebus</a>, <a href="index.php?page=problem&amp;action=view&amp;id=119">sarpe</a>, <a href="index.php?page=problem&amp;action=view&amp;id=135">insule</a>, <a href="index.php?page=problem&amp;action=view&amp;id=534">lacuri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=629">zuzu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=681">joc11</a>, <a href="index.php?page=problem&amp;action=view&amp;id=952">gradina</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1102">dreptunghiuri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1195">drenaj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1231">parcela</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1264">acces</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1267">tsunami</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1503">betasah</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1505">zona</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1537">zone</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1538">taxa</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1574">foto</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1583">ferma1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1614">antitero</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1626">robotzi</a></td></tr>                    
+                </tbody></table>
+
+                </div>

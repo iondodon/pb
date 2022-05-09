@@ -1,0 +1,213 @@
+		<table width="735" cellpadding="0" cellspacing="0"><tbody><tr><td align="right" valign="middle"><form style="margin:0px; padding:0px;" action="index.php" method="get"><input name="submit" value="submit" onmouseover="this.src='style/trimitesolutieover.jpg'" onmouseout="this.src='style/trimitesolutie.jpg'" type="image" src="style/trimitesolutie.jpg" border="0"><input type="hidden" name="page" value="problem"><input type="hidden" name="action" value="submit"><input type="hidden" name="id" value="582"><input type="hidden" name="contest_id" value="0">
+        </form><br><a href="index.php?page=problem&amp;id=582&amp;milestone=1"><strong>problemă favorită</strong>&nbsp;<img id="favo" src="style/star0.bmp" border="0" alt="favorit"></a><br><br></td></tr></tbody></table>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.campion</title>
+<link rel="stylesheet" type="text/css" href="auxiliare/template.css">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" class="fundalee">
+<tbody><tr>   
+    <td class="titlu">sms</td>
+    <td class="fundalcampion" align="right"><br><br><br>
+   <table>
+        <tbody><tr> 
+          <td width="205"><div align="left" class="albastru">Timp maxim de executie/test:</div></td>
+          <td width="112"><div align="right" class="bold"> <span class="albastru"><span class="albastru"><span class="albastru">0.1 secunde</span></span></span></div></td>
+        </tr><tr> 
+          <td><div align="left" class="albastru">Memorie totala disponibila/stiva:</div></td>
+          <td><div align="right" class="albastru">15 MB/1 MB</div></td>
+      </tr></tbody></table>    </td>
+  </tr>
+</tbody></table>
+
+<p class="continut">T9 este un sistem dezvoltat pentru a satisface nevoia de a trimite cât mai rapid 
+  mesaje text (SMS) utilizând telefoane mobile. Un mesaj text consta dintr-o succesiune 
+  de cuvinte terminate prin câte un spatiu. Sistemul T9 este bazat pe un dictionar 
+  stocat în memoria telefonului. Daca utilizam acest sistem, atunci când tastam 
+  un cuvânt este suficient sa apasam pentru fiecare litera o singura tasta. La 
+  actionarea unei taste este afisat primul cuvânt din dictionar care contine, 
+  pe pozitia respectiva, una dintre literele înscrise pe tasta actionata. Cuvântul (daca exista în dictionar) va fi format luând 
+  literele de pe pozitiile corespunzatoare din fiecare cuvânt afisat, în ordine. 
+</p>
+<p class="continut">Exemplu (vezi exemplul 2) <br>
+Secventa de taste<span class="courier">2 9 4</span> duce la aparitia cuvintelor<br>
+<span class="courier">2 <u>A</u>ZI</span>&nbsp; (adica una dintre literele 
+  <span class="courier">ABC</span> pe prima pozitie)<br>
+<span class="courier">9 A<u>Z</u>I</span> (adica una dintre literele 
+  <span class="courier">WXZY</span> pe pozitia a doua)<br>
+<span class="courier">4 AZ<u>I</u></span> (adica una dintre literele   <span class="courier">GHI</span> pe pozitia a treia)<br>
+deci cuvântul format va fi <span class="courier">AZI</span>.</p>
+<p class="continut">Fiecare litera a unui cuvânt care nu este în dictionar va fi înlocuita cu un caracter 
+  *. Daca exista mai multe cuvinte care corespund unei anumite secvente de actionari 
+  de taste, va fi afisat primul în ordine alfabetica.</p>
+<p class="continut">Aranjarea literelor pe tastatura telefonului mobil este urmatoarea:</p>
+<div align="center"> 
+  <table border="1" cellspacing="0" cellpadding="0">
+    <tbody><tr> 
+      <td width="58"> 
+        <p><span class="courier">1</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">2</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">3</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">4</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">5</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">6</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">7</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">8</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">9</span></p>
+      </td>
+    </tr>
+    <tr> 
+      <td width="58"> 
+        <p><span class="courier">Spatiu</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">A B C</span></p>
+      </td>
+      <td width="58"> 
+        <p><span lang="DE" style="font-family:&quot;Courier New&quot;;
+  ">D E F</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">G H I</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">J K L</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">M N O</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">P Q R S</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">T U V</span></p>
+      </td>
+      <td width="58"> 
+        <p><span class="courier">W X Y Z</span></p>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p class="subtitlu">Cerinta</p>
+<p class="continut">Scrieti un program care sa simuleze sistemul T9 pe baza unui dictionar dat.</p>
+<p class="subtitlu">Date de intrare</p>
+<p class="continut">Fisierul de intrare <span class="courier">sms.in</span> 
+  contine:</p>
+<table width="75%" border="0">
+  <tbody><tr> 
+    <td width="23%"><span class="courier">sms.in</span></td>
+    <td width="77%">Semnificatie</td>
+  </tr>
+  <tr> 
+    <td width="23%"> 
+      <p><span class="courier">M<br>
+        C<sub>1</sub><br>
+        C<sub>2</sub><br>
+        ...<br>
+        C<sub>M</sub><br>
+        N <br>
+        T<sub>1</sub> T<sub>2</sub> ... T<sub>N</sub></span></p>
+      </td>
+    <td width="77%" valign="top"> <span class="courier">M</span> 
+      reprezinta numarul de cuvinte din dictionar<br>
+      <span class="courier">C<sub>1</sub> C<sub>2</sub> ... 
+      C<sub>M</sub></span> reprezinta cuvintele din dictionar ordonate alfabetic <br>
+      <span class="courier">N</span> 
+      -numarul de taste actionate<br>
+      <span class="courier">T<sub>1</sub> T<sub>2</sub> 
+      ... T<sub>N</sub></span>&nbsp;&nbsp;- cifrele înscrise pe cele 
+    <span class="courier">N</span> taste actionate</td>
+  </tr>
+</tbody></table>
+<p class="subtitlu">Date de iesire</p>
+<p class="continut">Fisierul de iesire <span class="courier">sms.out</span> 
+  contine pe o singura linie mesajul generat de sistemul T9 în urma apasarii celor 
+<span class="courier">N</span> taste. Mesajul se termina cu caracterul spatiu urmat de sfârsit de linie.</p>
+<p class="subtitlu">Restrictii</p>
+<ul>
+<li><span class="courier">1 &lt;= M &lt;= 100</span></li>
+<li>Cuvintele <span class="courier">C<sub>1</sub></span>, <span class="courier">C<sub>2</sub></span>, 
+  ... , <span class="courier">C<sub>M</sub></span> sunt ordonate 
+  alfabetic si sunt scrise cu majuscule</li>
+<li>Lungimea oricarui cuvânt este de maxim <span class="courier">100 
+  de litere</span>
+</li><li>  <span class="courier">1 &lt;= N &lt;= 100</span>
+</li><li>  <span class="courier">T<sub>i</sub></span> apartine multimii 
+  {1, 2, ..., 9}, pentru orice <span class="courier">i</span> 
+  din {1, 2, ..., <span class="courier">N</span>}</li>
+  
+<p class="subtitlu">Exemple</p>
+<table width="100%" border="1" cellspacing="1" cellpadding="1">
+  <tbody><tr class="antet_">
+    <td class="courier">sms.in</td>
+    <td class="courier">sms.out</td>
+  </tr>
+  <tr>
+    <td class="tabel_"><span class="courier">3<br>
+ABC<br>
+BBB<br>
+DEF<br>
+10<br>
+2 2 2 1 2 3 1 2 2 2</span></td>
+    <td class="tabel_" valign="top"><span class="courier">ABC ** ABC</span></td>
+  </tr>
+</tbody></table>
+<br>
+<table width="100%" border="1" cellpadding="1" cellspacing="1">
+  <tbody><tr class="antet_">
+    <td class="courier">sms.in</td>
+    <td class="courier">sms.out</td>
+  </tr>
+  <tr>
+    <td class="tabel_"><span class="courier">4<br>
+AZI<br>
+ESTE<br>
+IERI<br>
+VINERI<br>
+11<br>
+2 9 4 1 4 3 7 4 1 7 4</span></td>
+    <td class="tabel_" valign="top"><span class="courier">AZI IERI ** </span><br></td>
+  </tr>
+</tbody></table>
+
+<p align="right">prof. <i>Serban Marinel</i><br>
+  Liceul de Informatica "Gr. C. Moisil" Iaşi <br>
+  Contact: <a href="mailto:marinel_serban@yahoo.co">marinel_serban_at_yahoo.com</a></p>
+
+
+<div class="continut" align="right" style="margin-right:13px;">propunător: <strong>Prof. Emanuela Cerchez</strong><br><a name="emanuela.cerchez@gmail.com" href="mailto:emanuela.cerchez@gmail.com">emanuela.cerchez@gmail.com</a></div><div class="subtitlu">Articole recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                
+                <tbody><tr><td width="200px" valign="top"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=2">autor</a>: </strong></td><td valign="top"><a href="index.php?page=paper&amp;action=view&amp;id=9">Metode numerice</a>, <a href="index.php?page=paper&amp;action=view&amp;id=11">KMP</a>, <a href="index.php?page=paper&amp;action=view&amp;id=20">Numere Catalan, numere Narayana</a></td></tr><tr><td valign="top" width="200px"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=9">şiruri de caractere</a>: </strong></td><td valign="top"><a href="index.php?page=paper&amp;action=view&amp;id=11">KMP</a></td></tr></tbody></table></div><div class="subtitlu">Probleme recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                    <tbody><tr><td valign="top" width="200px"><strong>De la <a href="index.php?page=location&amp;id=29">.campion 2003</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=557">newcomp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=558">rima</a>, <a href="index.php?page=problem&amp;action=view&amp;id=559">algebra</a>, <a href="index.php?page=problem&amp;action=view&amp;id=560">turn1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=568">aparitii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=569">carti1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=570">program1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=571">tgraf</a>, <a href="index.php?page=problem&amp;action=view&amp;id=572">ceas1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=573">spioni</a>, <a href="index.php?page=problem&amp;action=view&amp;id=574">kgb</a>, <a href="index.php?page=problem&amp;action=view&amp;id=575">tabara1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=577">romane</a>, <a href="index.php?page=problem&amp;action=view&amp;id=578">stop</a>, <a href="index.php?page=problem&amp;action=view&amp;id=579">hanoi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=580">lift</a>, <a href="index.php?page=problem&amp;action=view&amp;id=581">pic</a>, <a href="index.php?page=problem&amp;action=view&amp;id=583">fibo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=584">bac</a>, <a href="index.php?page=problem&amp;action=view&amp;id=585">parc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=586">circular</a>, <a href="index.php?page=problem&amp;action=view&amp;id=587">logn</a>, <a href="index.php?page=problem&amp;action=view&amp;id=602">lex</a>, <a href="index.php?page=problem&amp;action=view&amp;id=603">joc7</a>, <a href="index.php?page=problem&amp;action=view&amp;id=604">cuburi1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=605">sant</a>, <a href="index.php?page=problem&amp;action=view&amp;id=606">mobile</a>, <a href="index.php?page=problem&amp;action=view&amp;id=607">pattern</a>, <a href="index.php?page=problem&amp;action=view&amp;id=608">oras</a>, <a href="index.php?page=problem&amp;action=view&amp;id=609">produs</a>, <a href="index.php?page=problem&amp;action=view&amp;id=610">mutare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=611">viteza</a>, <a href="index.php?page=problem&amp;action=view&amp;id=613">concurs2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=614">furnici</a>, <a href="index.php?page=problem&amp;action=view&amp;id=615">homeless</a>, <a href="index.php?page=problem&amp;action=view&amp;id=616">subsir</a></td></tr><tr><td valign="top" width="200px"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=2">autor</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=38">premii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=44">finala</a>, <a href="index.php?page=problem&amp;action=view&amp;id=50">fractii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=56">trei</a>, <a href="index.php?page=problem&amp;action=view&amp;id=65">manevre</a>, <a href="index.php?page=problem&amp;action=view&amp;id=68">nrcuv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=81">an</a>, <a href="index.php?page=problem&amp;action=view&amp;id=88">vopsea</a>, <a href="index.php?page=problem&amp;action=view&amp;id=94">opmat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=106">tramvai</a>, <a href="index.php?page=problem&amp;action=view&amp;id=107">bipal</a>, <a href="index.php?page=problem&amp;action=view&amp;id=116">kpal</a>, <a href="index.php?page=problem&amp;action=view&amp;id=119">sarpe</a>, <a href="index.php?page=problem&amp;action=view&amp;id=124">replace</a>, <a href="index.php?page=problem&amp;action=view&amp;id=142">factori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=145">barca</a>, <a href="index.php?page=problem&amp;action=view&amp;id=154">perechi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=161">grupe</a>, <a href="index.php?page=problem&amp;action=view&amp;id=163">cod</a>, <a href="index.php?page=problem&amp;action=view&amp;id=168">reactii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=176">factura</a>, <a href="index.php?page=problem&amp;action=view&amp;id=178">decript</a>, <a href="index.php?page=problem&amp;action=view&amp;id=183">trenuri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=190">holo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=200">cifre</a>, <a href="index.php?page=problem&amp;action=view&amp;id=202">firma</a>, <a href="index.php?page=problem&amp;action=view&amp;id=213">tribile</a>, <a href="index.php?page=problem&amp;action=view&amp;id=216">mesaj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=231">tricouri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=248">pajura</a>, <a href="index.php?page=problem&amp;action=view&amp;id=262">monede</a>, <a href="index.php?page=problem&amp;action=view&amp;id=275">programs</a>, <a href="index.php?page=problem&amp;action=view&amp;id=281">fry</a>, <a href="index.php?page=problem&amp;action=view&amp;id=289">repeat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=308">red</a>, <a href="index.php?page=problem&amp;action=view&amp;id=321">pavaj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=331">bacan</a>, <a href="index.php?page=problem&amp;action=view&amp;id=338">nrbinar</a>, <a href="index.php?page=problem&amp;action=view&amp;id=344">invest</a>, <a href="index.php?page=problem&amp;action=view&amp;id=355">cutie2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=376">loc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=384">depou</a>, <a href="index.php?page=problem&amp;action=view&amp;id=390">nr3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=395">zid</a>, <a href="index.php?page=problem&amp;action=view&amp;id=409">felinare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=417">sir3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=432">sqr</a>, <a href="index.php?page=problem&amp;action=view&amp;id=437">carte</a>, <a href="index.php?page=problem&amp;action=view&amp;id=440">labirint</a>, <a href="index.php?page=problem&amp;action=view&amp;id=449">stea</a>, <a href="index.php?page=problem&amp;action=view&amp;id=464">count</a>, <a href="index.php?page=problem&amp;action=view&amp;id=475">evaluare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=481">super</a>, <a href="index.php?page=problem&amp;action=view&amp;id=485">schimb</a>, <a href="index.php?page=problem&amp;action=view&amp;id=505">zaruri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=524">vectori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=530">spirala</a>, <a href="index.php?page=problem&amp;action=view&amp;id=550">desen1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=558">rima</a>, <a href="index.php?page=problem&amp;action=view&amp;id=572">ceas1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=577">romane</a>, <a href="index.php?page=problem&amp;action=view&amp;id=584">bac</a>, <a href="index.php?page=problem&amp;action=view&amp;id=592">excursia</a>, <a href="index.php?page=problem&amp;action=view&amp;id=603">joc7</a>, <a href="index.php?page=problem&amp;action=view&amp;id=614">furnici</a>, <a href="index.php?page=problem&amp;action=view&amp;id=624">munte1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=647">cezar</a>, <a href="index.php?page=problem&amp;action=view&amp;id=656">marcare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=670">excursie1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=674">culmi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=678">sume1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=686">schi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=695">nr4</a>, <a href="index.php?page=problem&amp;action=view&amp;id=696">fractie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=699">cod3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=706">medii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=708">tren3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=734">top</a>, <a href="index.php?page=problem&amp;action=view&amp;id=770">sant1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=771">imagine</a>, <a href="index.php?page=problem&amp;action=view&amp;id=790">ocr</a>, <a href="index.php?page=problem&amp;action=view&amp;id=804">perfect</a>, <a href="index.php?page=problem&amp;action=view&amp;id=821">pluton</a>, <a href="index.php?page=problem&amp;action=view&amp;id=828">reforma</a>, <a href="index.php?page=problem&amp;action=view&amp;id=831">alee</a>, <a href="index.php?page=problem&amp;action=view&amp;id=833">ceas2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=843">paritate</a>, <a href="index.php?page=problem&amp;action=view&amp;id=845">borcane</a>, <a href="index.php?page=problem&amp;action=view&amp;id=854">aranjare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=862">comoara1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=868">culmi1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=897">reactivi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=907">submult</a>, <a href="index.php?page=problem&amp;action=view&amp;id=945">sablon1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=958">sir8</a>, <a href="index.php?page=problem&amp;action=view&amp;id=959">sume2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=966">dansatori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=967">smith</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1006">tom</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1008">matriosca</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1019">asociativ</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1034">control1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1062">calorii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1078">immortal</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1087">concat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1092">mat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1093">cubinvers</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1121">mine</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1158">divizori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1165">cheie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1168">stelar</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1190">joct</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1202">minmax</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1229">cladire</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1242">adunscad</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1312">razboi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1349">ore</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1360">oras1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1370">sumprod</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1373">prisme</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1381">operatii1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1396">lgdrum</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1479">unupatru</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1500">chibrituri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1518">extraprime</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1550">prieten</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1571">rebus1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1573">grindina</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1604">opmult</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1606">betisoare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1614">antitero</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1615">clase</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1619">pagini</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1641">ornament</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1660">ordine</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1668">spioni1</a></td></tr><tr><td width="200px" valign="top"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=9">şiruri de caractere</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=40">scp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=45">ab</a>, <a href="index.php?page=problem&amp;action=view&amp;id=58">sl</a>, <a href="index.php?page=problem&amp;action=view&amp;id=68">nrcuv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=100">rv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=116">kpal</a>, <a href="index.php?page=problem&amp;action=view&amp;id=118">chimie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=121">reteta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=124">replace</a>, <a href="index.php?page=problem&amp;action=view&amp;id=143">grad</a>, <a href="index.php?page=problem&amp;action=view&amp;id=156">index</a>, <a href="index.php?page=problem&amp;action=view&amp;id=163">cod</a>, <a href="index.php?page=problem&amp;action=view&amp;id=167">text</a>, <a href="index.php?page=problem&amp;action=view&amp;id=178">decript</a>, <a href="index.php?page=problem&amp;action=view&amp;id=185">spam</a>, <a href="index.php?page=problem&amp;action=view&amp;id=186">complex</a>, <a href="index.php?page=problem&amp;action=view&amp;id=200">cifre</a>, <a href="index.php?page=problem&amp;action=view&amp;id=206">anagrame</a>, <a href="index.php?page=problem&amp;action=view&amp;id=210">balbe</a>, <a href="index.php?page=problem&amp;action=view&amp;id=215">criptmat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=216">mesaj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=217">maxim</a>, <a href="index.php?page=problem&amp;action=view&amp;id=227">astre</a>, <a href="index.php?page=problem&amp;action=view&amp;id=242">sablon</a>, <a href="index.php?page=problem&amp;action=view&amp;id=285">formule</a>, <a href="index.php?page=problem&amp;action=view&amp;id=296">ed</a>, <a href="index.php?page=problem&amp;action=view&amp;id=312">balls</a>, <a href="index.php?page=problem&amp;action=view&amp;id=326">vocale</a>, <a href="index.php?page=problem&amp;action=view&amp;id=328">prop</a>, <a href="index.php?page=problem&amp;action=view&amp;id=331">bacan</a>, <a href="index.php?page=problem&amp;action=view&amp;id=336">novel</a>, <a href="index.php?page=problem&amp;action=view&amp;id=349">bitslang</a>, <a href="index.php?page=problem&amp;action=view&amp;id=367">text2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=373">ref</a>, <a href="index.php?page=problem&amp;action=view&amp;id=378">scor2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=381">convert</a>, <a href="index.php?page=problem&amp;action=view&amp;id=383">cod2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=392">compress</a>, <a href="index.php?page=problem&amp;action=view&amp;id=401">pstring</a>, <a href="index.php?page=problem&amp;action=view&amp;id=423">sub</a>, <a href="index.php?page=problem&amp;action=view&amp;id=558">rima</a>, <a href="index.php?page=problem&amp;action=view&amp;id=570">program1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=586">circular</a>, <a href="index.php?page=problem&amp;action=view&amp;id=594">randuri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=647">cezar</a>, <a href="index.php?page=problem&amp;action=view&amp;id=650">bifo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=651">joc9</a>, <a href="index.php?page=problem&amp;action=view&amp;id=652">pal</a>, <a href="index.php?page=problem&amp;action=view&amp;id=660">bare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=687">joc12</a>, <a href="index.php?page=problem&amp;action=view&amp;id=696">fractie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=699">cod3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=700">tunel</a>, <a href="index.php?page=problem&amp;action=view&amp;id=717">csir</a>, <a href="index.php?page=problem&amp;action=view&amp;id=734">top</a>, <a href="index.php?page=problem&amp;action=view&amp;id=745">ratina</a>, <a href="index.php?page=problem&amp;action=view&amp;id=757">cifru1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=766">limbaj</a>, <a href="index.php?page=problem&amp;action=view&amp;id=774">adun</a>, <a href="index.php?page=problem&amp;action=view&amp;id=816">ecuatii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=839">dir</a>, <a href="index.php?page=problem&amp;action=view&amp;id=843">paritate</a>, <a href="index.php?page=problem&amp;action=view&amp;id=864">virus</a>, <a href="index.php?page=problem&amp;action=view&amp;id=889">sir6</a>, <a href="index.php?page=problem&amp;action=view&amp;id=904">mesaj2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=908">text1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=916">sirul</a>, <a href="index.php?page=problem&amp;action=view&amp;id=920">ogorul</a>, <a href="index.php?page=problem&amp;action=view&amp;id=926">rez</a>, <a href="index.php?page=problem&amp;action=view&amp;id=945">sablon1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=946">anag</a>, <a href="index.php?page=problem&amp;action=view&amp;id=958">sir8</a>, <a href="index.php?page=problem&amp;action=view&amp;id=964">seti</a>, <a href="index.php?page=problem&amp;action=view&amp;id=969">secvsir</a>, <a href="index.php?page=problem&amp;action=view&amp;id=976">dp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1014">cuvant</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1029">strings</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1031">antipatie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1037">fractie1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1058">links</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1064">ordonare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1082">text3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1087">concat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1142">codif</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1165">cheie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1200">alfabetar</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1201">cuvinte2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1241">comp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1245">litere</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1265">mxl</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1287">mesaj3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1298">expresie2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1316">grad2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1366">antic</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1377">zuma</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1391">expeval</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1393">combcuv</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1396">lgdrum</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1398">subtitrare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1423">compresie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1445">zigzag</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1473">azeval</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1491">fraze</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1508">subsecvente</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1545">showroom</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1571">rebus1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1602">agenda</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1604">opmult</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1606">betisoare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1613">reziston</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1615">clase</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1616">vot2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1624">ecp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1634">smiley</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1647">charlie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1664">cript</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1665">scadere</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1668">spioni1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1685">sablon3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1693">expand</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1696">culori3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1702">virgule</a></td></tr>                    
+                </tbody></table>
+
+                </div><div class="subtitlu">Chestionare recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                    <tbody><tr><td width="200px" valign="top"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=9">şiruri de caractere</a>: </strong></td><td valign="top"><a href="index.php?page=questionnaire&amp;action=view&amp;id=1">Chestionar KMP</a></td></tr>                    
+                </tbody></table>
+
+                </div></ul>

@@ -1,0 +1,141 @@
+		<table width="735" cellpadding="0" cellspacing="0"><tbody><tr><td align="right" valign="middle"><form style="margin:0px; padding:0px;" action="index.php" method="get"><input name="submit" value="submit" onmouseover="this.src='style/trimitesolutieover.jpg'" onmouseout="this.src='style/trimitesolutie.jpg'" type="image" src="style/trimitesolutie.jpg" border="0"><input type="hidden" name="page" value="problem"><input type="hidden" name="action" value="submit"><input type="hidden" name="id" value="459"><input type="hidden" name="contest_id" value="0">
+        </form><br><a href="index.php?page=problem&amp;id=459&amp;milestone=1"><strong>problemă favorită</strong>&nbsp;<img id="favo" src="style/star0.bmp" border="0" alt="favorit"></a><br><br></td></tr></tbody></table> 
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.campion</title>
+<link rel="stylesheet" type="text/css" href="auxiliare/template.css">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="10" class="fundalee"> 
+<tbody><tr> <td class="titlu">lot</td>
+  <td class="fundalcampion" align="right"><br><br><br> 
+<table> <tbody><tr> <td><div align="left" class="albastru">Timp maxim de executie/test:</div></td><td><div align="right" class="bold"> 
+<span class="albastru">0.1 secunde</span></div></td></tr><tr> <td><div align="left" class="albastru">Memorie 
+totala disponibila/stiva:</div></td><td><div align="right" class="albastru">16 
+MB/1 MB</div></td></tr></tbody></table></td></tr> 
+</tbody></table>
+
+<p><font face="Arial, Helvetica, sans-serif" size="2"> Bunelul lui Danut este 
+  prisacar. In fiecare primavara el inchiriaza un lot, pe care plaseaza prisaca 
+  sa. Deoarece bunelului ii place sa calatoreasca, lotul este ales in fiecare 
+  primavara in alta regiune a tarii. Albinele, fiind inteligente, se deplaseaza 
+  doar in interiorul lotului inchiriat, fara a trece frontiera, care este determinata 
+  de o linie franta inchisa. Pentru a optimiza colectarea polenului, albinele 
+  trebuie sa zboare din orice punct al lotului spre stup dupa o traiectorie liniara 
+  (fara a schimba directia de zbor). Astfel, se cere respectarea urmatoarelor 
+  criterii in procesul de selectare a ofertelor cu loturi de inchiriat:</font></p>
+<table width="100%">
+  <tbody><tr> 
+    <td> 
+      <ol start="1" type="1">
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Linia franta, 
+          care marcheaza frontiera lotului este inchisa.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Segmentele liniei 
+          frante care marcheaza frontiera nu se intersecteaza intre ele, exceptie 
+          fiind doar extremitatile segmentelor adiacente.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Orice doua puncte 
+          interioare ale lotului pot fi unite printr-un segment care nu intersecteaza 
+          frontiera.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Oricare 3 varfuri 
+          consecutive ale frontierei nu sunt colineare. </font></li>
+      </ol>
+    </td>
+    <td> 
+      <p align="right"> <font face="Arial, Helvetica, sans-serif" size="2"><a href="image001.png"> 
+        <img style="max-width:700px;" src="www/arhiva_2009/problems/459/html/image002.jpg"> </a></font></p>
+    </td>
+  </tr>
+</tbody></table>
+<p class="subtitlu"><font face="Arial, Helvetica, sans-serif" size="2"><b>Cerinta</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Ofertele primite de bunel 
+  contin descrierile mai multor loturi (vezi figura precedenta). Scrieti un program 
+  care l-ar ajuta pe Danut sa selecteze loturile care corespund criteriilor formulate 
+  in enunt.</font></p>
+<p class="subtitlu"><font face="Arial, Helvetica, sans-serif" size="2"><b>Date 
+  de intrare</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Prima linie a fisierului 
+  <font face="Courier New, Courier, mono">lot.in</font> contine un numar natural 
+  <font face="Courier New, Courier, mono">N</font> – numarul de loturi descrise 
+  in fisier. Descrierea fiecarui lot incepe cu o linie pe care se afla un numar 
+  natural <font face="Courier New, Courier, mono">K<sub>i</sub></font> – 
+  numarul de segmente ale frontierei lotului <font face="Courier New, Courier, mono">i</font>. 
+  Urmeaza, in ordine, descrierile varfurilor frontierei lotului, cate un varf 
+  pe linie. Descrierea varfului e data de coordonatele sale (<font face="Courier New, Courier, mono">x</font><b>, 
+  </b> <font face="Courier New, Courier, mono">y</font>) separate prin spatiu. 
+  Descrierea lotului <font face="Courier New, Courier, mono">i</font> se sfarseste 
+  cu o linie ce contine numerele <font face="Courier New, Courier, mono">0 0</font>.</font></p>
+<p class="subtitlu"><font face="Arial, Helvetica, sans-serif" size="2"><b>Date 
+  de iesire</b></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Fisierul <font face="Courier New, Courier, mono">lot.out</font> 
+  va contine <font face="Courier New, Courier, mono">N</font> linii. Linia <font face="Courier New, Courier, mono">i</font> 
+  va contine cifra <font face="Courier New, Courier, mono">1</font> daca lotul 
+  <font face="Courier New, Courier, mono">i</font> satisface cerintele din enunt 
+  sau <font face="Courier New, Courier, mono">0</font> – in caz contrar. 
+  </font></p>
+<p class="subtitlu"><font face="Arial, Helvetica, sans-serif" size="2"><b>Restrictii</b></font></p>
+<p><font face="Courier New, Courier, mono" size="2">0 &lt; N &lt;= 20 <br>
+  </font><font face="Courier New, Courier, mono" size="2">3 &lt;= K<sub>i</sub> 
+  &lt;= 1000, i= 1, ..., N <br>
+  </font><font face="Courier New, Courier, mono" size="2">-10000 &lt;= x, y &lt;= 
+  10000<br>
+  </font><font face="Courier New, Courier, mono" size="2">x, y &lt;&gt; 0</font></p>
+<p class="subtitlu"><font face="Arial, Helvetica, sans-serif" size="2"><b>Exemplu</b></font></p>
+<table border="1" width="100%">
+  <tbody><tr class="antet_"> 
+    <td valign="top" class="tabel_"> 
+      <p><font face="Courier New, Courier, mono" size="2">lot.in (desen)</font></p>
+    </td>
+    <td valign="top" class="tabel_"> 
+      <p><font face="Courier New, Courier, mono" size="2">lot.out</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td valign="top" class="tabel_"> 
+      <p><font face="Courier New, Courier, mono" size="2">3 <br>
+        4<br>
+        1 1<br>
+        1 5<br>
+        7 5<br>
+        7 1<br>
+        0 0<br>
+        4<br>
+        -2 -1<br>
+        -2 -6 <br>
+        -3 -3<br>
+        -7 -1<br>
+        0 0 <br>
+        3<br>
+        -1 1<br>
+        -3 1<br>
+        -1 3<br>
+        0 0 </font></p>
+    </td>
+    <td valign="top" class="tabel_"> 
+      <p><font face="Courier New, Courier, mono" size="2">1<br>
+        0<br>
+        1</font></p>
+    </td>
+  </tr>
+</tbody></table>
+<p align="right"><font size="2" face="Arial, Helvetica, sans-serif">prof. <i>Sergiu 
+  Corlat </i><br>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif">Liceul Moldo-turc 
+  Chisinau <br>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif"> Contact:<a href="mailto:scorlat@gmail.com">scorlat@gmail.com</a><br>
+  </font> </p>
+
+
+
+<div class="continut" align="right" style="margin-right:13px;">propunător: <strong>Prof. Emanuela Cerchez</strong><br><a name="emanuela.cerchez@gmail.com" href="mailto:emanuela.cerchez@gmail.com">emanuela.cerchez@gmail.com</a></div><div class="subtitlu">Articole recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                
+                <tbody><tr><td width="200px" valign="top"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=5">autor</a>: </strong></td><td valign="top"><a href="index.php?page=paper&amp;action=view&amp;id=41">Algoritmi si probleme de geometrie computationala</a></td></tr><tr><td valign="top" width="200px"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=13">geometrie</a>: </strong></td><td valign="top"><a href="index.php?page=paper&amp;action=view&amp;id=33">Elemente de geometrie</a>, <a href="index.php?page=paper&amp;action=view&amp;id=41">Algoritmi si probleme de geometrie computationala</a>, <a href="index.php?page=paper&amp;action=view&amp;id=43">Transformari geometrice</a>, <a href="index.php?page=paper&amp;action=view&amp;id=45">Puncte laticeale</a></td></tr></tbody></table></div><div class="subtitlu">Probleme recomandate</div>
+                <div class="loctabel"><table class="tabel2" cellpadding="2" cellspacing="0">
+                
+                    <tbody><tr><td valign="top" width="200px"><strong>De la <a href="index.php?page=location&amp;id=22">.campion 2005</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=364">cuc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=365">prime</a>, <a href="index.php?page=problem&amp;action=view&amp;id=366">radio</a>, <a href="index.php?page=problem&amp;action=view&amp;id=367">text2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=368">honest</a>, <a href="index.php?page=problem&amp;action=view&amp;id=369">police</a>, <a href="index.php?page=problem&amp;action=view&amp;id=370">comori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=371">patrate3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=372">fisc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=373">ref</a>, <a href="index.php?page=problem&amp;action=view&amp;id=374">pcod</a>, <a href="index.php?page=problem&amp;action=view&amp;id=375">zmeu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=376">loc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=377">nr01</a>, <a href="index.php?page=problem&amp;action=view&amp;id=378">scor2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=379">judete</a>, <a href="index.php?page=problem&amp;action=view&amp;id=380">strict</a>, <a href="index.php?page=problem&amp;action=view&amp;id=381">convert</a>, <a href="index.php?page=problem&amp;action=view&amp;id=382">bile3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=383">cod2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=384">depou</a>, <a href="index.php?page=problem&amp;action=view&amp;id=385">auto2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=386">tree</a>, <a href="index.php?page=problem&amp;action=view&amp;id=389">cat</a>, <a href="index.php?page=problem&amp;action=view&amp;id=390">nr3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=391">chimie2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=392">compress</a>, <a href="index.php?page=problem&amp;action=view&amp;id=393">jobs</a>, <a href="index.php?page=problem&amp;action=view&amp;id=394">leaves</a>, <a href="index.php?page=problem&amp;action=view&amp;id=395">zid</a>, <a href="index.php?page=problem&amp;action=view&amp;id=396">politics</a>, <a href="index.php?page=problem&amp;action=view&amp;id=397">onu2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=398">ploaia</a>, <a href="index.php?page=problem&amp;action=view&amp;id=400">grazing</a>, <a href="index.php?page=problem&amp;action=view&amp;id=401">pstring</a>, <a href="index.php?page=problem&amp;action=view&amp;id=414">cartonase2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=415">exp</a>, <a href="index.php?page=problem&amp;action=view&amp;id=416">cartoane</a>, <a href="index.php?page=problem&amp;action=view&amp;id=417">sir3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=418">program</a>, <a href="index.php?page=problem&amp;action=view&amp;id=419">scoici</a>, <a href="index.php?page=problem&amp;action=view&amp;id=431">playlist</a>, <a href="index.php?page=problem&amp;action=view&amp;id=432">sqr</a>, <a href="index.php?page=problem&amp;action=view&amp;id=433">cai1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=434">farfurii</a>, <a href="index.php?page=problem&amp;action=view&amp;id=435">joc1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=436">trafic</a>, <a href="index.php?page=problem&amp;action=view&amp;id=437">carte</a>, <a href="index.php?page=problem&amp;action=view&amp;id=438">set</a>, <a href="index.php?page=problem&amp;action=view&amp;id=439">barbie</a>, <a href="index.php?page=problem&amp;action=view&amp;id=440">labirint</a>, <a href="index.php?page=problem&amp;action=view&amp;id=441">firma1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=442">vile</a>, <a href="index.php?page=problem&amp;action=view&amp;id=443">game</a>, <a href="index.php?page=problem&amp;action=view&amp;id=444">donald</a>, <a href="index.php?page=problem&amp;action=view&amp;id=445">ambigram</a>, <a href="index.php?page=problem&amp;action=view&amp;id=446">dans</a>, <a href="index.php?page=problem&amp;action=view&amp;id=447">albinuta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=448">rlcs</a>, <a href="index.php?page=problem&amp;action=view&amp;id=449">stea</a>, <a href="index.php?page=problem&amp;action=view&amp;id=450">submatrix</a>, <a href="index.php?page=problem&amp;action=view&amp;id=451">cub1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=452">ham</a>, <a href="index.php?page=problem&amp;action=view&amp;id=453">sponsori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=454">young</a>, <a href="index.php?page=problem&amp;action=view&amp;id=456">jokes</a>, <a href="index.php?page=problem&amp;action=view&amp;id=457">pizza1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=458">albine</a>, <a href="index.php?page=problem&amp;action=view&amp;id=460">atac1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=461">monede1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=464">count</a>, <a href="index.php?page=problem&amp;action=view&amp;id=465">exam</a>, <a href="index.php?page=problem&amp;action=view&amp;id=466">herbert</a>, <a href="index.php?page=problem&amp;action=view&amp;id=467">sudoku</a>, <a href="index.php?page=problem&amp;action=view&amp;id=469">bio</a>, <a href="index.php?page=problem&amp;action=view&amp;id=470">metro</a></td></tr><tr><td valign="top" width="200px"><strong>De acelaşi <a href="index.php?page=auth&amp;type=author&amp;id=5">autor</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=46">nice</a>, <a href="index.php?page=problem&amp;action=view&amp;id=74">fib</a>, <a href="index.php?page=problem&amp;action=view&amp;id=77">atac</a>, <a href="index.php?page=problem&amp;action=view&amp;id=113">mere</a>, <a href="index.php?page=problem&amp;action=view&amp;id=120">ff</a>, <a href="index.php?page=problem&amp;action=view&amp;id=223">patrate</a>, <a href="index.php?page=problem&amp;action=view&amp;id=227">astre</a>, <a href="index.php?page=problem&amp;action=view&amp;id=234">baby</a>, <a href="index.php?page=problem&amp;action=view&amp;id=243">zapada</a>, <a href="index.php?page=problem&amp;action=view&amp;id=267">pendul</a>, <a href="index.php?page=problem&amp;action=view&amp;id=294">unu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=303">dragon</a>, <a href="index.php?page=problem&amp;action=view&amp;id=306">placi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=335">druid</a>, <a href="index.php?page=problem&amp;action=view&amp;id=357">bete</a>, <a href="index.php?page=problem&amp;action=view&amp;id=370">comori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=398">ploaia</a>, <a href="index.php?page=problem&amp;action=view&amp;id=472">arcas</a>, <a href="index.php?page=problem&amp;action=view&amp;id=484">factk</a>, <a href="index.php?page=problem&amp;action=view&amp;id=501">robot1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=588">kalah</a>, <a href="index.php?page=problem&amp;action=view&amp;id=971">cetati</a>, <a href="index.php?page=problem&amp;action=view&amp;id=979">palc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1120">expo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1164">porumb</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1234">universitate</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1313">safeu</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1324">capra</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1377">zuma</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1425">gsm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1435">megascoala</a></td></tr><tr><td width="200px" valign="top"><strong>Despre <a href="index.php?page=keyword&amp;action=view&amp;id=13">geometrie</a>: </strong></td><td valign="top"><a href="index.php?page=problem&amp;action=view&amp;id=41">forum</a>, <a href="index.php?page=problem&amp;action=view&amp;id=47">supertri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=54">ozn</a>, <a href="index.php?page=problem&amp;action=view&amp;id=59">detinut</a>, <a href="index.php?page=problem&amp;action=view&amp;id=77">atac</a>, <a href="index.php?page=problem&amp;action=view&amp;id=80">afise</a>, <a href="index.php?page=problem&amp;action=view&amp;id=113">mere</a>, <a href="index.php?page=problem&amp;action=view&amp;id=120">ff</a>, <a href="index.php?page=problem&amp;action=view&amp;id=159">teren</a>, <a href="index.php?page=problem&amp;action=view&amp;id=169">volei</a>, <a href="index.php?page=problem&amp;action=view&amp;id=180">aven</a>, <a href="index.php?page=problem&amp;action=view&amp;id=223">patrate</a>, <a href="index.php?page=problem&amp;action=view&amp;id=226">robot</a>, <a href="index.php?page=problem&amp;action=view&amp;id=240">pahare</a>, <a href="index.php?page=problem&amp;action=view&amp;id=267">pendul</a>, <a href="index.php?page=problem&amp;action=view&amp;id=280">robot2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=303">dragon</a>, <a href="index.php?page=problem&amp;action=view&amp;id=333">poligon</a>, <a href="index.php?page=problem&amp;action=view&amp;id=335">druid</a>, <a href="index.php?page=problem&amp;action=view&amp;id=339">laser</a>, <a href="index.php?page=problem&amp;action=view&amp;id=371">patrate3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=398">ploaia</a>, <a href="index.php?page=problem&amp;action=view&amp;id=444">donald</a>, <a href="index.php?page=problem&amp;action=view&amp;id=460">atac1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=472">arcas</a>, <a href="index.php?page=problem&amp;action=view&amp;id=504">paralel</a>, <a href="index.php?page=problem&amp;action=view&amp;id=507">dotnet</a>, <a href="index.php?page=problem&amp;action=view&amp;id=518">aedaro</a>, <a href="index.php?page=problem&amp;action=view&amp;id=524">vectori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=530">spirala</a>, <a href="index.php?page=problem&amp;action=view&amp;id=531">distanta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=537">triunghi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=543">center</a>, <a href="index.php?page=problem&amp;action=view&amp;id=633">harta1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=654">seceta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=668">antena</a>, <a href="index.php?page=problem&amp;action=view&amp;id=712">poligon1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=728">benzina</a>, <a href="index.php?page=problem&amp;action=view&amp;id=738">zoo</a>, <a href="index.php?page=problem&amp;action=view&amp;id=752">texan</a>, <a href="index.php?page=problem&amp;action=view&amp;id=803">oypara</a>, <a href="index.php?page=problem&amp;action=view&amp;id=840">dreptc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=894">mosia</a>, <a href="index.php?page=problem&amp;action=view&amp;id=938">sea</a>, <a href="index.php?page=problem&amp;action=view&amp;id=939">poligon3</a>, <a href="index.php?page=problem&amp;action=view&amp;id=941">poligon2</a>, <a href="index.php?page=problem&amp;action=view&amp;id=944">snipers</a>, <a href="index.php?page=problem&amp;action=view&amp;id=965">basm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=971">cetati</a>, <a href="index.php?page=problem&amp;action=view&amp;id=978">placa</a>, <a href="index.php?page=problem&amp;action=view&amp;id=997">nori</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1047">cerc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1050">smin</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1110">cern</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1117">cuiburi</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1148">acerc</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1174">select</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1180">proiect</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1271">poligon4</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1297">terenuri</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1302">monoton</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1311">acoperire</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1324">capra</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1336">testament</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1343">jb</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1379">sdmin</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1416">ozn1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1424">parc1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1425">gsm</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1484">triunghi5</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1510">puncte6</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1534">romb1</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1564">dreapta</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1573">grindina</a>, <a href="index.php?page=problem&amp;action=view&amp;id=1600">tdrept</a></td></tr>                    
+                </tbody></table>
+
+                </div>
