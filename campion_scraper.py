@@ -59,8 +59,9 @@ def process_solved_problems():
     for tr in soup.find_all('tr')[1:]:
         problem_name_column = tr.find_all('td')[1]
         problem_name = problem_name_column.get_text()
+        folder_name = normalize_problem_name(problem_name)
 
-        if folder_exists(problem_name):
+        if folder_exists(folder_name):
             print('Problem already exists: ' + problem_name)
             continue
 
@@ -71,20 +72,33 @@ def process_solved_problems():
 
         problem_description_html = get_problem_description_html(problem_link)
 
-        save_problem(problem_name, problem_description_html, language, source_code)
+        save_problem(folder_name, problem_description_html, language, source_code)
 
 
 def folder_exists(folder_name):
-    return os.path.isdir(PROBLEMS_DIRECTORY + '/' + folder_name)
+    return os.path.isdir(os.path.join(PROBLEMS_DIRECTORY, folder_name))
 
 
-def save_problem(problem_name, problem_description_html, language, source_code):
-    folder_name = problem_name.replace(' ', '_')
-    os.mkdir(PROBLEMS_DIRECTORY + '/' + folder_name)
+def normalize_problem_name(problem_name):
+    return problem_name.strip().replace(' ', '_')
 
-    with open(PROBLEMS_DIRECTORY + '/' + folder_name + '/problem_name.html', 'w') as f:
+
+def language_to_extension(language):
+    normalized = language.strip().lower()
+    if 'pas' in normalized:
+        return 'pas'
+    if 'c++' in normalized or 'cpp' in normalized:
+        return 'cpp'
+    return normalized
+
+
+def save_problem(folder_name, problem_description_html, language, source_code):
+    os.mkdir(os.path.join(PROBLEMS_DIRECTORY, folder_name))
+    extension = language_to_extension(language)
+
+    with open(os.path.join(PROBLEMS_DIRECTORY, folder_name, f'{folder_name}.html'), 'w') as f:
         f.write(problem_description_html.get_attribute('innerHTML'))
-    with open(PROBLEMS_DIRECTORY + '/' + folder_name + '/problem_name.' + language, 'w') as f:
+    with open(os.path.join(PROBLEMS_DIRECTORY, folder_name, f'{folder_name}.{extension}'), 'w') as f:
         f.write(source_code)
 
 
