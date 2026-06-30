@@ -61,6 +61,7 @@ The repository includes solutions involving:
 * String and expression processing
 
 * Sorting, searching, greedy algorithms, and combinatorics
+* etc.
 
 ## Languages
 
